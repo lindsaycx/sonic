@@ -1,0 +1,53 @@
+@font-face {
+    font-family: 'prophecyType';
+    src: url('../fonts/PROPHECYTYPE.ttf') format('woff2'),
+         url('../fonts/PROPHECYTYPE.ttf') format('woff');
+}
+
+.g-base {
+    font-family: "prophecyType";
+    font-size: 2.5rem;
+    color: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+
+#p-prophecy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 20px
+}
+#s-prophecy-container {
+
+    img{
+        margin-top:20px;
+    }
+}
+
+#s-prophecy-container:nth-of-type(20){
+    margin-top: 500px;
+}
+
+#s-prophecy-container-obscured{
+    margin-top: 500px;
+    mask: linear-gradient(to left, transparent, white);
+        p {
+            opacity: .2;
+        }
+        img{
+        padding:10px;
+        
+        mask: linear-gradient(to top, transparent, transparent, white);
+    }
+}
+
+#s-credits {
+    margin-top: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1rem;
+}
